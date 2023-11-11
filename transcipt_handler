@@ -1,0 +1,12 @@
+import json
+f = open('transcripts.json') #temp load json, comment out later
+x = json.load(f) #temp load json, comment out later
+#load json file in the main file to reduce runtime
+
+def transcipt(id): #改成两个variable ->id:str, x:dictionary
+     #if valid id, else throw error
+     #删掉所有的/n
+     #print(x[id].replace('\n', ''))
+     return  x[id].replace('\n', '')
+
+#transcipt("2966")
